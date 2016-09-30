@@ -1,0 +1,75 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&subset=cyrillic';
+body {
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+.app {
+  width:300px;
+  margin:0 auto;
+}
+
+ul li {
+  list-style: none;
+  border-bottom: 1px solid #cccccc;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+.user-list-item {
+  padding: 5px 0 5px 10px;
+  font-size:1.3rem;
+  font-weight: 300;
+  clear: both;
+  min-height: 35px;
+}
+
+.user-list-item-photo {
+  float:left;
+  margin-right: 10px;
+}
+
+a.user-profile-link {
+  font-weight: 300;
+  display:block;
+  background: #0275d8;
+  color:#ffffff;
+  padding:5px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  opacity: 0.6;
+}
+
+a.user-profile-link::before {
+  content: '⇦ ';
+}
+
+.user-profile-photo {
+  text-align: center;
+}
+
+.user-profile-name {
+  font-weight: 900;
+  font-size:2rem;
+  text-align: center;
+}
+
+.user-profile-posts {
+  margin: 10px 0 5px 0;
+  text-align: center;
+  font-size:1.1rem;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 5px;
+}
+
+.post-item-title {
+  text-align: center;
+}
