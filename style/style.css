@@ -36,6 +36,19 @@ ul li:last-child {
   margin-right: 10px;
 }
 
+.user-searchbar input {
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #b1b1b1;
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.user-searchbar {
+  text-align: center;
+}
+
 a.user-profile-link {
   font-weight: 300;
   display:block;
