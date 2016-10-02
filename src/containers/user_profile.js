@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Link } from 'react-router';
 
-import { getUserPosts } from '../actions/index';
+import { getUserPosts, getUserPost } from '../actions/index';
+import UserPost from '../components/user_post';
 
 class UserProfile extends Component {
   constructor(props) {
@@ -18,15 +19,13 @@ class UserProfile extends Component {
     });
 
     this.state = ({ profileData: profileData[0] });
-
   }
 
   postList() {
     return this.props.posts.map((post) => {
       return (
-        <li className="post-item-title" key={post.postTitle}>
-          {post.postTitle}
-        </li>
+
+        <UserPost key={post.postId} post={post} />
       );
     });
   }
@@ -60,5 +59,4 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators({ getUserPosts }, dispatch);
 }
 
-//export default UserProfile;
 export default connect(mapStateToProps, mapDispatchToProps)(UserProfile);

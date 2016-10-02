@@ -31,7 +31,7 @@ class UserList extends Component {
       }
     });
 
-    this.setState({ sortedUsers: sortedUsers });
+    this.setState({ sortedUsers });
   }
 
   render() {
