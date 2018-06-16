@@ -1,9 +1,9 @@
-import React from 'react';
-import { Route, IndexRoute } from 'react-router';
+import React from 'react'
+import { Route, IndexRoute } from 'react-router'
 
-import App from './components/app';
-import UserList from './containers/user_list';
-import UserProfile from './containers/user_profile';
+import App from './components/app'
+import UserList from './components/UserList'
+import UserProfile from './components/UserProfile'
 
 export default (
   <Route path="/" component={App}>
